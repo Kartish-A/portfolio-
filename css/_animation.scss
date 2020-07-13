@@ -1,0 +1,17 @@
+
+
+/* --- logo animation --- */
+.logo-border{ 
+    animation: roll 2s 2;
+    transform: rotate(30deg);
+    
+   }
+   
+   @keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+   }

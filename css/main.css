@@ -1,0 +1,828 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font: bold;
+}
+
+body {
+  background-color: #011627;
+}
+
+/* ---  my projects section  --- */
+.container {
+  width: 100vw;
+  height: 1300px;
+}
+
+.ribbon-3 {
+  width: 100vw;
+  height: 100px;
+  background-color: #FF8811;
+  position: absolute;
+  margin-top: 80px;
+}
+.ribbon-3 p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #fdfffc;
+}
+
+.projects-grid {
+  width: 98vw;
+  height: 800px;
+  position: absolute;
+  margin-top: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#project {
+  display: flex;
+  flex-direction: column;
+  /* it was necessary for the animation */
+  /* ---  animation slideshow for project 1 --- */
+  /* ---  animation slideshow for project 2 --- */
+  /* ---  animation slideshow for project 3 --- */
+  /* ---  animation slideshow for project 4 --- */
+  /*this is btn under each project's browser*/
+  /* ---"My work" banner--- */
+}
+#project #browser {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 20px;
+  align-self: center;
+  background-color: #fdfffc;
+  box-shadow: -10px 10px 5px #E71D36;
+}
+#project .one, #project .two, #project .three, #project .four {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 20px;
+  align-self: center;
+  background-color: #fdfffc;
+  box-shadow: -10px 10px 5px #E71D36;
+  position: relative;
+}
+#project .one img {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  animation: 12s autoplay infinite ease-in-out;
+}
+@keyframes autoplay {
+  0% {
+    top: 100%;
+  }
+  4% {
+    top: 0%;
+  }
+  33.33% {
+    top: 0%;
+  }
+  37.33% {
+    top: -100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+#project .one > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#project .one > *:nth-child(2) {
+  animation-delay: 4s;
+}
+#project .one > *:nth-child(3) {
+  animation-delay: 8s;
+}
+#project .one:hover, #project .two:hover, #project .three:hover, #project .four:hover {
+  opacity: 0.5;
+}
+#project .two img {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  animation: 9s autoplay infinite ease-in-out;
+}
+@keyframes autoplay {
+  0% {
+    top: 100%;
+  }
+  4% {
+    top: 0%;
+  }
+  33.33% {
+    top: 0%;
+  }
+  37.33% {
+    top: -100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+#project .two > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#project .two > *:nth-child(2) {
+  animation-delay: 3s;
+}
+#project .two > *:nth-child(3) {
+  animation-delay: 6s;
+}
+#project .three img {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  animation: 8s autoplay infinite ease-in-out;
+}
+@keyframes autoplay {
+  0% {
+    top: 100%;
+  }
+  4% {
+    top: 0%;
+  }
+  33.33% {
+    top: 0%;
+  }
+  37.33% {
+    top: -100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+#project .three > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#project .three > *:nth-child(2) {
+  animation-delay: 2s;
+}
+#project .three > *:nth-child(3) {
+  animation-delay: 4s;
+}
+#project .three > *:nth-child(4) {
+  animation-delay: 6s;
+}
+#project .four img {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  animation: 20s autoplay infinite ease-in-out;
+}
+@keyframes autoplay {
+  0% {
+    top: 100%;
+  }
+  4% {
+    top: 0%;
+  }
+  33.33% {
+    top: 0%;
+  }
+  37.33% {
+    top: -100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+#project .four > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#project .four > *:nth-child(2) {
+  animation-delay: 5s;
+}
+#project .four > *:nth-child(3) {
+  animation-delay: 10s;
+}
+#project .four > *:nth-child(4) {
+  animation-delay: 15s;
+}
+#project .moreAbout {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 15px;
+  justify-self: flex-start;
+  margin-left: 180px;
+  background-color: #FF8811;
+  text-align: center;
+  padding-top: 10px;
+  color: #fdfffc;
+}
+#project .moreAbout:hover {
+  background-color: #E71D36;
+}
+#project .projectBanner {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  align-self: flex-end;
+  margin-top: 80px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #fdfffc;
+  box-shadow: -8px 8px 3px #E71D36;
+  color: #2EC4B6;
+}
+
+/* ---- First Project ---- */
+.first-project {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.second-project {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.third-project {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.fourth-project {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.top {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.top img {
+  width: 200px;
+  height: 50px;
+}
+
+/* --- logo animation --- */
+.logo-border {
+  animation: roll 2s 2;
+  transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ---- main slideshow ---- */
+.main {
+  background-color: #011627;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 650px;
+}
+
+.slider {
+  width: 890px;
+  height: 590px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  z-index: 1;
+}
+.slider img {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  animation: 12s autoplay infinite ease-in-out;
+}
+
+@keyframes autoplay {
+  0% {
+    top: 100%;
+  }
+  4% {
+    top: 0%;
+  }
+  33.33% {
+    top: 0%;
+  }
+  37.33% {
+    top: -100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+.slider > *:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slider > *:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slider > *:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.banner-1, .banner-2 {
+  width: 320px;
+  height: 80px;
+  border: 1px solid #2EC4B6;
+  border-radius: 20px;
+  box-shadow: -5px 5px 5px #E71D36;
+  background-color: #fdfffc;
+  align-self: flex-end;
+  z-index: 2;
+}
+
+.banner-1 {
+  margin-top: 40px;
+  margin-right: 320px;
+  margin-bottom: 20px;
+  color: #011627;
+  text-align: left;
+  padding: 20px 0 0 15px;
+  font-size: 20px;
+}
+
+.banner-2 {
+  margin-right: 270px;
+}
+
+/* ---- End of main slideshow ---- */
+#one {
+  width: 100vw;
+  display: flex;
+  border: 5px solid brown;
+}
+
+.title {
+  width: 500px;
+  height: 120px;
+  margin: 0 auto;
+  align-self: center;
+  border: 1px solid #ff8811;
+}
+
+/* --- logo start ---*/
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200;
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.tag {
+  margin-top: 10px;
+  margin-left: -45px;
+}
+
+.tag-border {
+  width: 80px;
+  height: 80px;
+  background-color: #FF8811;
+  border-top: 5px solid #E71D36;
+  border-bottom: 5px solid #E71D36;
+  border-right: 5px solid #E71D36;
+  margin-top: 20px;
+  margin-left: 55px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-border {
+  width: 200px;
+  height: 125px;
+  margin-top: 90px;
+  margin-left: 50px;
+  border-radius: 15px;
+  border: 5px solid #2EC4B6;
+  background-color: #FF8811;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+/* ---end of logo section ---*/
+.corner-top {
+  align-self: flex-end;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.corner-top-right {
+  width: 160px;
+  height: 200px;
+  background-color: #0DCBCB;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.corner-top-left {
+  width: 160px;
+  height: 200px;
+  background-color: #E71D36;
+  border-radius: 15px;
+  margin-top: -125px;
+  z-index: 0;
+}
+
+/* --- header ---*/
+.header {
+  display: flex;
+  width: 100vw;
+  border: 2px solid green;
+  /*grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 300px;*/
+}
+
+/* --- logo start ---*/
+.logo {
+  /*grid-column-start: 1;
+  grid-column-end: 2;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200;
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.tag {
+  margin-top: 10px;
+  margin-left: -45px;
+}
+
+.tag-border {
+  width: 80px;
+  height: 80px;
+  background-color: #FF8811;
+  border-top: 5px solid #E71D36;
+  border-bottom: 5px solid #E71D36;
+  border-right: 5px solid #E71D36;
+  margin-top: 20px;
+  margin-left: 55px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-border {
+  width: 200px;
+  height: 125px;
+  margin-top: 90px;
+  margin-left: 50px;
+  position: absolute;
+  border-radius: 15px;
+  border: 5px solid #2EC4B6;
+  background-color: #FF8811;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+/* ---end of logo section ---*/
+/* --- main-menu ---*/
+.main-menu {
+  margin-top: 100px;
+  width: 800px;
+  border: 2px solid white;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+header ul li {
+  margin-left: 50px;
+  font-size: 24px;
+}
+header ul li a {
+  color: #90E0EF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #E71D36;
+  font-size: 34px;
+}
+
+/* --- end of main-menu ---*/
+/* --- top-left-corner start ---*/
+.corner-top {
+  width: 370px;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid yellow;
+}
+
+.corner-top-right {
+  width: 180px;
+  height: 235px;
+  background-color: #0DCBCB;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.corner-top-left {
+  width: 180px;
+  height: 235px;
+  background-color: #E71D36;
+  border-radius: 15px;
+  margin-top: -125px;
+  align-self: start;
+  margin-left: 50px;
+  z-index: 0;
+}
+
+/* --- End of top-left-corner ---*/
+/* --- top-paragraph --- */
+.top-paragraph {
+  height: 280px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio::before {
+  content: "<AK>";
+  color: orange;
+  opacity: 60%;
+  font-size: 50px;
+}
+
+.portfolio {
+  color: #2EC4B6;
+  font-size: 40px;
+  margin-left: 350px;
+  margin-top: 20px;
+}
+
+.line::before {
+  content: "<h1>";
+  color: orange;
+  opacity: 60%;
+  font-size: 35px;
+  margin-right: 30px;
+}
+
+.line {
+  width: 1000px;
+  height: 150px;
+  color: #2EC4B6;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  align-self: center;
+}
+.line .initial {
+  color: #fdfffc;
+  font-size: 40px;
+}
+
+.line::after {
+  content: "</h1>";
+  color: orange;
+  opacity: 60%;
+  font-size: 35px;
+  margin-left: 30px;
+  padding-top: 20px;
+}
+
+.line-4::before {
+  content: "</AK>";
+  color: orange;
+  opacity: 60%;
+  font-size: 50px;
+  margin-left: 350px;
+}
+
+/* --- End of top-paragraph --- */
+/* -- bottom-paragraph -- */
+.bottom-paragraph {
+  width: 100vw;
+  height: 180px;
+}
+
+.name {
+  color: #2EC4B6;
+  font-size: 30px;
+  margin-left: 350px;
+}
+
+.name::before {
+  content: "<position>";
+  color: orange;
+  opacity: 60%;
+  font-size: 35px;
+  margin-right: 50px;
+}
+
+.job {
+  color: #2EC4B6;
+  font-size: 30px;
+  margin-left: 650px;
+  margin-top: 30px;
+}
+
+.position-end {
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+.position-end::before {
+  content: "</position>";
+  color: orange;
+  opacity: 60%;
+  font-size: 35px;
+  margin-right: 50px;
+  margin-top: 80px;
+}
+
+/* -- End of bottom-paragraph -- */
+/* -- social-media bar -- */
+.footer {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .icon-bar {
+  width: 800px;
+  height: 90px;
+  background-color: #FF8811;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+.footer a {
+  font-size: 25px;
+  margin-left: 20px;
+  padding: 10px;
+  color: #E71D36;
+  border-radius: 50%;
+  background-color: #fdfffc;
+  background-clip: padding-box;
+}
+.footer p {
+  color: #fdfffc;
+  margin-right: 40px;
+}
+
+/* -- End of social-media bar -- */
+/* -- about me section -- */
+.about-me {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/backgrounds/pear-4056741_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  /*min-height: 600px;*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.ribbon-1 {
+  width: 100vw;
+  height: 100px;
+  background-color: rgba(225, 136, 17, 0.5);
+  position: absolute;
+  margin-top: 80px;
+}
+.ribbon-1 p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #fdfffc;
+}
+
+.diagonal {
+  width: 600px;
+  height: 400px;
+  background-color: #2EC4B6;
+  border: 3px solid #FF8811;
+  align-self: center;
+  margin-top: 80px;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 0;
+  /*margin-top: 350px;
+  margin-left: 500px;
+  transform: rotate(45deg);*/
+}
+
+.straight {
+  width: 700px;
+  height: 350px;
+  background-color: #FF8811;
+  border: 3px solid #2EC4B6;
+  align-self: center;
+  margin-top: 120px;
+  z-index: 1;
+}
+.straight p {
+  color: #fdfffc;
+  font-size: 20px;
+  padding: 20px 15px;
+}
+.straight p .first-letter {
+  font-size: 40px;
+  color: #E71D36;
+  padding-left: 20px;
+}
+
+/* -- End of about me section -- */
+.break {
+  width: 100vw;
+  height: 200px;
+}
+
+/* -- skills & languages section -- */
+.skills {
+  width: 100vw;
+  height: 1300px;
+  background-image: url(/images/backgrounds/home-office-1207834_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.ribbon-2 {
+  width: 100vw;
+  height: 100px;
+  background-color: rgba(225, 136, 17, 0.5);
+  position: absolute;
+  margin-top: 80px;
+}
+.ribbon-2 p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #fdfffc;
+}
+
+.wrapper {
+  position: absolute;
+  margin-top: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .My-languages img {
+  width: 650px;
+  height: 500px;
+}
+.wrapper .Programing-skills img {
+  width: 650px;
+  height: 700px;
+}
+
+.center-logo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: 850px;
+  margin-top: 1050px;
+}
+.center-logo img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+/* -- End of skills & languages section -- */
+
+/*# sourceMappingURL=main.css.map */

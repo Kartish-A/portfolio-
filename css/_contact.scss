@@ -1,0 +1,81 @@
+
+#one {
+    width: 100vw;
+    display: flex;
+    border: 5px solid brown;
+}
+.title {
+    width: 500px;
+    height: 120px;
+    margin: 0 auto;
+    align-self: center;
+    border: 1px solid #ff8811;
+}
+/* --- logo start ---*/
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .tag {
+    margin-top: 10px;
+    margin-left: -45px;
+  }
+  
+  .tag-border {
+    width: 80px;
+    height: 80px;
+    background-color: #FF8811;
+    border-top: 5px solid #E71D36;
+    border-bottom: 5px solid #E71D36;
+    border-right: 5px solid #E71D36;
+    margin-top: 20px;
+    margin-left: 55px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .logo-border {
+    width: 200px;
+    height: 125px;
+    margin-top: 90px;
+    margin-left: 50px;
+    border-radius: 15px;
+    border: 5px solid #2EC4B6;
+    background-color: #FF8811;
+    transform: rotate(45deg);
+    z-index: 0;
+  }
+    /* ---end of logo section ---*/
+
+    .corner-top {
+       align-self: flex-end;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .corner-top-right {
+        width: 160px;
+        height: 200px;
+        background-color: #0DCBCB;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        align-self: flex-end;
+        z-index: 1;
+      }
+      
+      .corner-top-left {
+        width: 160px;
+        height: 200px;
+        background-color: #E71D36;
+        border-radius: 15px;
+        margin-top: -125px;
+        z-index: 0;
+      }

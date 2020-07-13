@@ -1,0 +1,206 @@
+
+/* ---  my projects section  --- */
+
+.container {
+    width: 100vw;
+    height: 1300px;
+  }
+  .ribbon-3 {
+    width: 100vw;
+    height: 100px;
+    background-color: #FF8811; 
+    position: absolute;
+    margin-top: 80px;
+        p {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 40px;
+      color: #fdfffc;
+        }
+  }
+  .projects-grid {
+    width: 98vw;
+    height: 800px;
+    position: absolute;
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+  }
+  
+  #project {
+    display: flex;
+    flex-direction: column;
+   
+      #browser {
+      width: 600px;
+      height: 300px;
+      overflow: hidden;
+      margin-top: 20px;
+      align-self: center;
+      background-color: #fdfffc;
+      box-shadow: -10px 10px 5px #E71D36;
+       
+    } 
+
+    /* it was necessary for the animation */
+    .one, .two, .three, .four {
+     width: 600px;
+     height: 300px;
+     overflow: hidden;
+     margin-top: 20px;
+     align-self: center;
+     background-color: #fdfffc;
+     box-shadow: -10px 10px 5px #E71D36;
+     position: relative;
+    }
+
+   /* ---  animation slideshow for project 1 --- */
+    .one  img {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        animation: 12s autoplay infinite ease-in-out;
+        }
+
+    @keyframes autoplay {
+        0% {top: 100%}
+        4% {top: 0%}
+        33.33% {top: 0%}
+        37.33% {top: -100%}
+        100% {top: -100%}
+       } 
+
+.one > *:nth-child(1) { animation-delay: 0s;}
+.one > *:nth-child(2) { animation-delay: 4s;}
+.one > *:nth-child(3) { animation-delay: 8s;}
+
+.one:hover, .two:hover, .three:hover, .four:hover{
+    opacity: 0.5;
+}
+
+ /* ---  animation slideshow for project 2 --- */
+
+.two  img {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    animation: 9s autoplay infinite ease-in-out;
+    }
+
+@keyframes autoplay {
+    0% {top: 100%}
+    4% {top: 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% {top: -100%}
+   } 
+
+.two > *:nth-child(1) { animation-delay: 0s;}
+.two > *:nth-child(2) { animation-delay: 3s;}
+.two > *:nth-child(3) { animation-delay: 6s;}
+
+ /* ---  animation slideshow for project 3 --- */
+.three  img {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    animation: 8s autoplay infinite ease-in-out;
+    }
+
+@keyframes autoplay {
+    0% {top: 100%}
+    4% {top: 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% {top: -100%}
+   } 
+
+.three > *:nth-child(1) { animation-delay: 0s;}
+.three > *:nth-child(2) { animation-delay: 2s;}
+.three > *:nth-child(3) { animation-delay: 4s;}
+.three > *:nth-child(4) { animation-delay: 6s;}
+
+ /* ---  animation slideshow for project 4 --- */
+ .four  img {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    animation: 20s autoplay infinite ease-in-out;
+    }
+
+@keyframes autoplay {
+    0% {top: 100%}
+    4% {top: 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% {top: -100%}
+   } 
+
+.four > *:nth-child(1) { animation-delay: 0s;}
+.four > *:nth-child(2) { animation-delay: 5s;}
+.four > *:nth-child(3) { animation-delay: 10s;}
+.four > *:nth-child(4) { animation-delay: 15s;}
+
+
+   /*this is btn under each project's browser*/   
+.moreAbout {
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      margin-top: 15px;
+      justify-self: flex-start;
+      margin-left: 180px;
+      background-color: #FF8811;
+      text-align: center;
+      padding-top: 10px;
+      color: #fdfffc;
+      }
+      .moreAbout:hover {
+          background-color: #E71D36;
+      }
+
+      /* ---"My work" banner--- */
+.projectBanner {
+      width: 200px;
+      height: 50px;
+      position: absolute;
+      align-self: flex-end;
+      margin-top: 80px;
+      border-radius: 20px;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      background-color: #fdfffc;
+      box-shadow: -8px 8px 3px #E71D36;
+      color: #2EC4B6;
+    }  
+  }
+  /* ---- First Project ---- */
+  .first-project {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+   .second-project {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .third-project {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .fourth-project {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .top {
+      width: 200px;
+      height: 50px;
+      margin: 0 auto;
+      margin-bottom: 200px;
+        img {
+     width: 200px;
+     height: 50px;
+          }
+         
+   }  
