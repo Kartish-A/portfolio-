@@ -556,7 +556,7 @@ body {
 }
 
 /* ---end of logo section ---*/
-.corner-top {
+.right-corner {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 370px;
@@ -569,8 +569,8 @@ body {
           flex-direction: column;
 }
 
-.corner-top-right {
-  width: 160px;
+.turquoise-corner {
+  width: 180px;
   height: 200px;
   background-color: #0DCBCB;
   border-top-left-radius: 15px;
@@ -580,24 +580,29 @@ body {
   z-index: 1;
 }
 
-.corner-top-left {
-  width: 160px;
+.red-corner {
+  width: 180px;
   height: 200px;
   background-color: #E71D36;
   border-radius: 15px;
-  margin-top: -125px;
+  margin-top: -100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   z-index: 0;
 }
 
 /* --- header ---*/
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   width: 100vw;
-  border: 2px solid green;
-  /*grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 300px;*/
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  -ms-grid-rows: 250px;
+      grid-template-rows: 250px;
 }
 
 /* --- logo start ---*/
@@ -655,9 +660,11 @@ body {
 /* ---end of logo section ---*/
 /* --- main-menu ---*/
 .main-menu {
-  margin-top: 100px;
-  width: 800px;
-  border: 2px solid white;
+  -ms-grid-column: 4 span 5;
+      grid-column-start: 4 span 5;
+  margin-top: 80px;
+  margin-left: 250px;
+  width: 1000px;
 }
 
 header ul {
@@ -672,7 +679,7 @@ header ul {
 }
 
 header ul li {
-  margin-left: 50px;
+  margin-left: 60px;
   font-size: 24px;
 }
 
@@ -685,15 +692,15 @@ header ul li a {
 
 ul li a:hover {
   background-color: rgba(255, 255, 255, 0.6);
-  color: #E71D36;
+  color: #011627;
   font-size: 34px;
 }
 
 /* --- end of main-menu ---*/
 /* --- top-left-corner start ---*/
 .corner-top {
-  width: 370px;
-  justify-self: flex-end;
+  width: 330px;
+  justify-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,12 +708,11 @@ ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid yellow;
 }
 
 .corner-top-right {
   width: 180px;
-  height: 235px;
+  height: 220px;
   background-color: #0DCBCB;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -717,10 +723,10 @@ ul li a:hover {
 
 .corner-top-left {
   width: 180px;
-  height: 235px;
+  height: 220px;
   background-color: #E71D36;
   border-radius: 15px;
-  margin-top: -125px;
+  margin-top: -100px;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;

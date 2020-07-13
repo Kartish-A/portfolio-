@@ -8,11 +8,11 @@
 
  /* --- header ---*/
 .header {
-    display: flex;
+    display: grid;
     width: 100vw;
-    border: 2px solid green;
-    /*grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 300px;*/
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-rows: 250px;
   }
   
   /* --- logo start ---*/
@@ -63,9 +63,10 @@
 
 /* --- main-menu ---*/
 .main-menu {
-    margin-top: 100px;
-   width: 800px;
-   border: 2px solid white;
+  grid-column-start: 4 span 5;
+   margin-top: 80px;
+   margin-left: 250px;
+   width: 1000px;
   }
   
   header ul {
@@ -74,7 +75,7 @@
     justify-content: flex-end;
     margin-right: 20px;
       li {
-      margin-left: 50px;
+      margin-left: 60px;
       font-size: 24px;
       a {
         color: #90E0EF;
@@ -85,7 +86,7 @@
   }
   ul li a:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    color: #E71D36;
+    color: #011627;
     font-size: 34px;
   }
  
@@ -93,18 +94,15 @@
 
   /* --- top-left-corner start ---*/
 .corner-top {
-    width: 370px;
-    
-    justify-self: flex-end;
+    width: 330px;
+    justify-self: center;
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow;
-
   }
   
   .corner-top-right {
     width: 180px;
-    height: 235px;
+    height: 220px;
     background-color: #0DCBCB;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -114,10 +112,10 @@
   
   .corner-top-left {
     width: 180px;
-    height: 235px;
+    height: 220px;
     background-color: #E71D36;
     border-radius: 15px;
-    margin-top: -125px;
+    margin-top: -100px;
     align-self: start;
     margin-left: 50px;
     z-index: 0;

@@ -54,15 +54,17 @@
   }
     /* ---end of logo section ---*/
 
-    .corner-top {
+    .right-corner {
        align-self: flex-end;
         width: 370px;
         display: flex;
         flex-direction: column;
+        
+
       }
       
-      .corner-top-right {
-        width: 160px;
+      .turquoise-corner {
+        width: 180px;
         height: 200px;
         background-color: #0DCBCB;
         border-top-left-radius: 15px;
@@ -71,11 +73,12 @@
         z-index: 1;
       }
       
-      .corner-top-left {
-        width: 160px;
+      .red-corner {
+        width: 180px;
         height: 200px;
         background-color: #E71D36;
         border-radius: 15px;
-        margin-top: -125px;
+        margin-top: -100px;
+        align-self: center;
         z-index: 0;
       }
