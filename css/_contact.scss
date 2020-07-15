@@ -1,16 +1,22 @@
 
+/* ---header ---*/
 #one {
     width: 100vw;
     display: flex;
-    border: 5px solid brown;
-}
+    }
 .title {
     width: 500px;
-    height: 120px;
+    height: 100px;
     margin: 0 auto;
+    
     align-self: center;
-    border: 1px solid #ff8811;
-}
+    background-color: #FF8811;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 100px;
+    color: #fdfffc;
+    font-size: 50px;
+  }
 /* --- logo start ---*/
 .logo {
     display: flex;
@@ -22,13 +28,11 @@
     margin-top: 50px;
     position: relative;
   }
-  
-  .tag {
+    .tag {
     margin-top: 10px;
     margin-left: -45px;
   }
-  
-  .tag-border {
+    .tag-border {
     width: 80px;
     height: 80px;
     background-color: #FF8811;
@@ -40,8 +44,7 @@
     position: relative;
     z-index: 1;
   }
-  
-  .logo-border {
+    .logo-border {
     width: 200px;
     height: 125px;
     margin-top: 90px;
@@ -54,31 +57,174 @@
   }
     /* ---end of logo section ---*/
 
-    .right-corner {
-       align-self: flex-end;
-        width: 370px;
-        display: flex;
-        flex-direction: column;
-        
+    /*--- CLICK-ITEM back to portfolio option ---*/
+    .back {
+      position: absolute;
+      align-self: flex-end;
+      font-size: 25px;
+      margin-left: 69%;
+         a {
+       text-decoration: none;
+       color: #2EC4B6;
+       line-height: 40px;
+       transition: 0.4s;
+    }
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      color: #011627;
+      font-size: 28px;
+    }
+    }
 
-      }
+/* ---right corner ---*/
+ .right-corner {
+    align-self: flex-end;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+  }
       
-      .turquoise-corner {
-        width: 180px;
-        height: 200px;
-        background-color: #0DCBCB;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        align-self: flex-end;
-        z-index: 1;
-      }
-      
-      .red-corner {
-        width: 180px;
-        height: 200px;
-        background-color: #E71D36;
-        border-radius: 15px;
-        margin-top: -100px;
-        align-self: center;
-        z-index: 0;
-      }
+ .turquoise-corner {
+    width: 180px;
+    height: 200px;
+    background-color: #0DCBCB;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    align-self: flex-end;
+    z-index: 1;
+  }
+  .red-corner {
+    width: 180px;
+    height: 200px;
+    background-color: #E71D36;
+    border-radius: 15px;
+    margin-top: -100px;
+    align-self: center;
+    z-index: 0;
+  }
+  /* ---End of right corner ---*/
+  /* --- End of header styling ---*/
+
+  /*---- top text section ----*/
+  .top-text {
+    height: 200px;
+  }
+  .contact {
+    font-size: 40px;
+    color: #2EC4B6;
+    margin-left: 450px;
+    margin-bottom: 20px;
+  }
+  .contact::before {
+    content: "<AK>";
+    color: orange;
+    opacity: 60%;
+    font-size: 50px;
+    margin-right: 50px;
+  }
+  /* ---- type-writer effect ----*/
+  .computer {
+    font-size: 30px;
+    color: #2EC4B6;
+    margin-left: 650px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    transform: translateY(50%);
+    overflow: hidden;
+  }
+  .computer::before {
+    content: "<h3>";
+    color: orange;
+    opacity: 60%;
+    font-size: 35px;
+    margin-right: 30px;
+  }
+  .computer::after {
+    content: "</h3>";
+    color: orange;
+    opacity: 60%;
+    font-size: 35px;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+  .line-3::before {
+    content: "</AK>";
+    color: orange;
+    opacity: 60%;
+    font-size: 50px;
+    margin-left: 450px;
+  }
+   /*--- TOP-TEXT ANIMATION CONTACT-FORM ---*/
+  .write {
+    animation: typewriter 4s steps(128) 1s 1 normal both, 
+    cursor 500ms infinite normal;
+  }
+  
+  @keyframes typewriter {
+    from {
+        width: 0rem;
+    }
+    to {
+         width: 100%;
+    }
+  }
+  /*---- End of top text section ----*/
+
+  /* ---- Form styling ---- */
+  form {
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    border: 2px solid #E71D36;
+    border-radius: 50px;
+    background-color: #E71D36;
+    
+    color: #fdfffc;
+  }
+  .form-group {
+    width: 900px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-content: space-between;
+    
+  }
+  input {
+    width: 450px;
+    height: 40px;
+    border: 1px solid #fdfffc;
+    border-radius: 20px;
+  }
+  input:focus {
+    background-color: rgba(46,196,182,0.8);
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4;
+  }
+  #message {
+    width: 450px;
+    border: 1px solid #fdfffc;
+    border-radius: 20px;
+  }
+  textarea:focus {
+    background-color: rgba(46,196,182,0.8);
+   
+  }
+  .btn {
+    width: 170px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 400px;
+    text-align: center;
+    border-radius: 40px;
+    border: 1px solid #2EC4B6;
+    background-color: #2EC4B6;
+    color: #fdfffc;
+    font-size: 20px;
+  }
+  .btn:hover {
+    background-color: rgba(144,224,239,0.8);
+  }
