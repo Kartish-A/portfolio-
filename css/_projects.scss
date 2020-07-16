@@ -40,8 +40,10 @@
       align-self: center;
       background-color: #fdfffc;
       box-shadow: -10px 10px 5px #E71D36;
-       
     } 
+    #browser:hover {
+      box-shadow: -20px 20px 10px #FF8811;
+    }
 
     /* it was necessary for the animation */
     .one, .two, .three, .four {
@@ -51,7 +53,6 @@
      margin-top: 20px;
      align-self: center;
      background-color: #fdfffc;
-     box-shadow: -10px 10px 5px #E71D36;
      position: relative;
     }
 
@@ -75,13 +76,7 @@
 .one > *:nth-child(2) { animation-delay: 4s;}
 .one > *:nth-child(3) { animation-delay: 8s;}
 
-.one:hover, .two:hover, .three:hover, .four:hover{
-   /* opacity: 0.5;*/
-   box-shadow: -20px 20px 15px #2ec4b6;
-}
-
  /* ---  animation slideshow for project 2 --- */
-
 .two  img {
     position: absolute;
     top: 100%;
@@ -206,5 +201,4 @@
      width: 200px;
      height: 50px;
           }
-         
    }  

@@ -61,6 +61,9 @@ body {
   background-color: #fdfffc;
   box-shadow: -10px 10px 5px #E71D36;
 }
+#project #browser:hover {
+  box-shadow: -20px 20px 10px #FF8811;
+}
 #project .one, #project .two, #project .three, #project .four {
   width: 600px;
   height: 300px;
@@ -68,7 +71,6 @@ body {
   margin-top: 20px;
   align-self: center;
   background-color: #fdfffc;
-  box-shadow: -10px 10px 5px #E71D36;
   position: relative;
 }
 #project .one img {
@@ -102,10 +104,6 @@ body {
 }
 #project .one > *:nth-child(3) {
   animation-delay: 8s;
-}
-#project .one:hover, #project .two:hover, #project .three:hover, #project .four:hover {
-  /* opacity: 0.5;*/
-  box-shadow: -20px 20px 15px #2ec4b6;
 }
 #project .two img {
   position: absolute;
