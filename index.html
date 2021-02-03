@@ -1,9 +1,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links below as first step to create responsive website -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
     <title>AK-Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -12,69 +18,80 @@
     <header class="header">
 
     <!--logo-->
-         <div class="logo">
+        <div class="logo">
             <div class="tag-border">
-                    <div class="tag">
-                      <img src="images/logo/-AK.png"  alt="logo" width="118" >
-                    </div>
-             </div>                 
-         </div>
-
-         <div class="logo-border"></div>
-                 
+                <div class="tag">
+                    <img src="images/logo/-AK.png"  alt="logo" width="80" >
+                </div>
+            </div>                 
+        </div>
+        <div class="logo-border"></div>
+        
 
     <!--main menu-->
-         <div class="main-menu">
-              <nav>
-                  <ul>
-                      <li><a href= "#"># home</a></li>
-                      <li><a href ="#about-me"># about me</a></li>
-                      <li><a href ="#Projects"># projects</a></li>
-                      <li><a href ="contact.html" target="_blank"># contact me</a></li>
-                   </ul>
-               </nav>
-          </div>
-
-     <!-- top-right-corner-->
-        <div class="corner-top">
-            <div class="corner-top-right"></div>
-            <div class="corner-top-left"></div>
+        <div class="main-menu">
+            <ul>
+                <li>
+                    <span class="hashtag">#</span>
+                    <a href ="#about-me"> about me</a>
+                </li>
+                <li>
+                    <span class="hashtag">#</span>
+                    <a href ="#Projects"> projects</a>
+                </li>
+                <li>
+                    <span class="hashtag">#</span>
+                    <a href ="contact.html" > contact</a>
+                </li>
+            </ul>
         </div>
+
+    <!-- top-right-corner-->
+        <!-- <div class="corner-top">
+            <div class="corner-top-left"></div>
+            <div class="corner-top-right"></div>
+        </div> -->
 
     </header>
 
-    <!--top-paragraph-->
-    <section class="top-paragraph">
-        <div class="portfolio"> Portfolio </div> 
-        <div class="css-typing">
-            <p class="line-1"> form the world of development I choose:</p>
-            <p class="line-2">programing!</p>    
+    
+    <!-- i put the typeWriter and the main slide-show in one div and the big phote in sibling div, both divs are going to be in a parent div that has display:flex property-->
+    <div class="mainContainer">
+        <div class="typeWriterAndSlide">
+            <!--top-paragraph-->
+            <section class="top-paragraph">
+                    <div class="portfolio"> Portfolio </div> 
+                    <div class="css-typing">
+                        <p class="line-1"> form the world of development I choose:</p>
+                        <p class="line-2">programing!</p>    
+                    </div>
+                    <div class="AK-closing line-4"></div>
+            </section>
+            <!--End Of Top-Paragraph-->
+
+            <!-- main auto slide-show section -->
+            <div class="main">
+                <slider class="slider">
+                    <img src="/images/main-slide/welcomeToMyP.png" width="650" height="340" alt="">
+                    <img src="/images/main-slide/myNameIs.png" width="650" height="340" alt="">
+                    <img src="/images/main-slide/myBackground.png" width="650" height="340" alt="">
+                </slider>
+                <div class="banner-1">
+                    <p>welcome to my portfolio!</p> </div>
+                <div class="banner-2"> I'm always in <br> a state of redesign</div>
+            </div>
         </div>
-        <div class="AK-closing line-4"></div>
-    </section>
-    <!--End Of Top-Paragraph-->
-
-
-    <!-- main auto slide-show section -->
-    <div class="main">
-       
-            <slider class="slider">
-              <img src="/images/main-slide/computer-1343393_1280.jpg" width"890" height "590" alt="">
-              <img src="/images/main-slide/web_1920.png" width="890" height="590" alt="">
-              <img src="/images/main-slide/programmer-1653351_1280.png" width="890" height="590" alt="">
-            </slider>
-           
-            <div class="banner-1">
-                <p>welcome to my portfolio!</p> </div>
-            <div class="banner-2"> I'm always in <br> a state of redesign</div>
+        <div>
+            <img src="./images/Group 56.png" width="600" height="680" alt="">
+        </div> 
     </div>
 
     <!-- bottom-paragraph -->
-    <div class="bottom-paragraph">
-        <div class="name"> My name is Abdoulfatah Kartish</div>
+    <!--  <div class="bottom-paragraph">
+        <div class="name"> My name is:<code> Abdoulfatah Kartish </code> </div>
         <div class="job">I'm a full-stack developer</div>
         <div class="position-end"></div>
-    </div>
+    </div> -->
 
     <!-- social-media bar -->
     <div class="footer">
@@ -84,9 +101,7 @@
             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
             <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
             <a href="#" class="github"><i class="fa fa-github"></i></a>
-            
         </div>
     </div>
     <!-- end of landing page -->
@@ -129,7 +144,7 @@
     </section>
     
     <div class="break"></div>
-     <!-- End of languages & skills section -->
+    <!-- End of languages & skills section -->
 
         <!-- my projects section -->
     <section id="Projects" class="container">
@@ -199,7 +214,7 @@
     <!-- go top button-->
     <div class="top">
         <a href=""><img src="/images/go-top.png"  alt="go top button "></a>
-     </div>  
-          
-</body>
+    </div> 
+
+    </body>
 </html>

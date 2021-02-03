@@ -1,29 +1,22 @@
-
-
 /* --- logo animation --- */
-.logo-border{ 
-    animation: roll 2s 2;
-    transform: rotate(30deg);
-    
-   }
-   
-   @keyframes roll {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-   }
+.logo-border {
+  animation: roll 2s 2;
+  transform: rotate(-45deg);
+}
 
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
 
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-
-
-
-   /*--TOP-PARAGRAPH ANIMATION MAIN PORTFOLIO--*/
-   /* --- first line --- */
-   /*.type {
+/*--TOP-PARAGRAPH ANIMATION MAIN PORTFOLIO--*/
+/* --- first line --- */
+/*.type {
     animation: typewriter 7s steps(50) 1s 2 normal both, 
     cursor 500ms infinite normal;
 }
@@ -33,12 +26,9 @@
         width: 0rem;
     }
     to {
-         width: 18rem;
+          width: 18rem;
     }
 }*/
-
-
-
 
 /* --- second  line --- 
 .type-2 {
@@ -51,9 +41,7 @@
       width: 0rem;
   }
   to {
-       width: 18rem;
+        width: 18rem;
   }
 }
 */
-
-
