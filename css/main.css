@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Courier New", Courier, monospace;
   font-style: italic;
   font: bold;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 body {
@@ -62,6 +62,10 @@ body {
   align-self: center;
   background-color: #fdfffc;
   box-shadow: -10px 10px 5px #E71D36;
+}
+#project #browser img {
+  width: 600px;
+  height: 300px;
 }
 #project #browser:hover {
   box-shadow: -20px 20px 10px #FF8811;
@@ -235,6 +239,7 @@ body {
   position: absolute;
   align-self: flex-end;
   margin-top: 80px;
+  margin-right: 30px;
   border-radius: 20px;
   text-align: center;
   padding: 15px;
@@ -273,7 +278,7 @@ body {
   width: 200px;
   height: 50px;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .top img {
   width: 200px;
@@ -326,30 +331,32 @@ body {
 */
 .mainContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 98vw;
+  margin: 0 auto;
 }
 
 /* ---- main slideshow ---- */
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 60vw;
-  height: 420px;
-  margin-top: 25px;
+  height: 450px;
+  margin-top: 35px;
 }
 
 .slider {
   width: 650px;
   height: 340px;
-  display: block;
   overflow: hidden;
   position: absolute;
-  justify-self: center;
-  align-self: center;
   z-index: 1;
 }
 .slider img {
   position: absolute;
+  width: 650px;
+  height: 340px;
   top: 100%;
   left: 0;
   animation: 12s autoplay infinite ease-in-out;
@@ -400,14 +407,14 @@ body {
 
 .banner-1 {
   margin-top: 40px;
-  margin-right: 100px;
+  margin-right: 80px;
   margin-bottom: 20px;
   text-align: center;
   padding: 10px;
 }
 
 .banner-2 {
-  margin-right: 80px;
+  margin-right: 60px;
   text-align: center;
   padding: 10px;
 }
@@ -416,11 +423,12 @@ body {
 /* ---header ---*/
 #one {
   width: 100vw;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: space-between;
 }
 
+/* ---end of logo section ---*/
 .title {
   width: 500px;
   height: 60px;
@@ -434,47 +442,10 @@ body {
   font-size: 32px;
 }
 
-/* --- logo start ---*/
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 140;
-  height: 140px;
-  margin-left: 30px;
-  margin-top: 50px;
-  position: relative;
-}
-
-.tag-border {
-  width: 50px;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 45px;
-  border-top: 3px solid #e71d36;
-  border-bottom: 3px solid #e71d36;
-  border-right: 3px solid #e71d36;
-  position: relative;
-  z-index: 1;
-}
-
-.logo-border {
-  width: 150px;
-  height: 100px;
-  margin-top: 40px;
-  margin-left: 40px;
-  border-radius: 15px;
-  border: 3px solid #2ec4b6;
-  background-color: #ff8811;
-  transform: rotate(45deg);
-  z-index: 0;
-}
-
-/* ---end of logo section ---*/
 /*--- CLICK-ITEM back to portfolio option ---*/
 .back {
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .back a {
   text-decoration: none;
@@ -521,15 +492,16 @@ body {
 /* --- End of header styling ---*/
 /*---- top text section ----*/
 .top-text {
-  width: 100vw;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
-  border: 1px dotted red;
 }
 
 .contact {
   font-size: 32px;
   color: #2ec4b6;
-  margin-left: 450px;
 }
 
 .contact::before {
@@ -542,14 +514,14 @@ body {
 
 /* ---- type-writer effect ----*/
 .computer {
-  width: 400px;
-  font-size: 26px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 22px;
   color: #2ec4b6;
-  margin-left: 650px;
+  margin-bottom: 30px;
   white-space: nowrap;
   transform: translateY(50%);
   overflow: hidden;
-  border: 2px solid white;
 }
 
 .computer::before {
@@ -574,7 +546,6 @@ body {
   color: orange;
   opacity: 40%;
   font-size: 32px;
-  margin-left: 450px;
 }
 
 /*--- TOP-TEXT ANIMATION CONTACT-FORM ---*/
@@ -587,7 +558,7 @@ body {
     width: 0px;
   }
   to {
-    width: 100%;
+    width: 65%;
   }
 }
 /*---- End of top text section ----*/
@@ -631,13 +602,14 @@ label {
   width: 450px;
   border: 1px solid #fdfffc;
   border-radius: 20px;
+  padding: 10px;
 }
 
 textarea:focus {
   background-color: rgba(46, 196, 182, 0.8);
 }
 
-.btn {
+.btn2 {
   width: 170px;
   height: 40px;
   margin-top: 50px;
@@ -650,41 +622,33 @@ textarea:focus {
   font-size: 20px;
 }
 
-.btn:hover {
+.btn2:hover {
   background-color: rgba(144, 224, 239, 0.8);
   cursor: pointer;
 }
 
 /* --- header ---*/
 .header {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  width: 100vw;
-  height: 160px;
 }
 
 /* --- logo start ---*/
-.logo {
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140;
+  margin-left: 30px;
+  width: 120;
   height: 140px;
-  margin-top: 20px;
   position: relative;
 }
 
-.tag {
-  width: 80px;
-  margin-top: 3px;
-  margin-left: -35px;
-}
-
 .tag-border {
-  width: 50px;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 45px;
+  width: 30px;
+  height: 25px;
+  margin-left: 15px;
   border-top: 3px solid #E71D36;
   border-bottom: 3px solid #E71D36;
   border-right: 3px solid #E71D36;
@@ -692,9 +656,15 @@ textarea:focus {
   z-index: 1;
 }
 
+.tag {
+  width: 50px;
+  margin-left: -25px;
+}
+
 .logo-border {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 60px;
+  margin: 0 auto;
   border-radius: 15px;
   position: absolute;
   border: 3px solid #2EC4B6;
@@ -706,14 +676,17 @@ textarea:focus {
 /* ---end of logo section ---*/
 /* --- main-menu ---*/
 .main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
+  margin-right: 30px;
 }
 
 header ul {
   display: flex;
   list-style: none;
-  justify-content: space-between;
-  margin-right: 80px;
+  justify-content: space-evenly;
 }
 header ul li {
   display: flex;
@@ -758,66 +731,37 @@ ul li a:hover {
 }
 
 /* --- end of main-menu ---*/
-/* --- top-left-corner start ---*/
-/* .corner-top {
-  width: 210px;
-  height: 200px;
-  display: flex;
-}
-
-.corner-top-right {
-  width: 100px;
-  height: 130px;
-  background-color: #0DCBCB;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  position: relative;
-  margin-left: 100px;
-  z-index: 0;
-}
-
-.corner-top-left {
-  width: 100px;
-  height: 130px;
-  background-color: #E71D36;
-  border-radius: 15px;
-  margin-top: 65px;
-  position: absolute;
-  align-self: flex-end;
-  margin-left: 50px;
-  z-index: 10;
-} */
-/* --- End of top-left-corner ---*/
 /* --- top-paragraph --- */
 .top-paragraph {
-  width: 60vw;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  padding: 30px;
 }
 
 .portfolio::before {
   content: "<AK>";
   color: orange;
   opacity: 40%;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .portfolio {
   color: #2EC4B6;
   font-size: 32px;
-  margin-left: 180px;
 }
 
 .line-1::before {
   content: "<h1>";
   color: orange;
   opacity: 40%;
-  font-size: 28px;
+  font-size: 24px;
   margin-right: 30px;
 }
 
 .css-typing {
-  align-self: center;
+  padding: 0 40px;
 }
 .css-typing p {
   color: #2EC4B6;
@@ -827,14 +771,13 @@ ul li a:hover {
 }
 
 .line-1 {
-  width: 800px;
   animation: type 5s steps(140) 2s 1 normal both;
+  margin-top: 20px;
 }
 
 .line-2 {
   margin-left: 100px;
-  width: 400px;
-  animation: type2 3s steps(128) 7s 1 normal both, cursor 500ms infinite normal;
+  animation: type2 3s steps(128) 7s 1 normal both;
 }
 
 @keyframes type {
@@ -857,7 +800,7 @@ ul li a:hover {
   content: "</h1>";
   color: orange;
   opacity: 40%;
-  font-size: 26px;
+  font-size: 22px;
   margin-left: 30px;
   padding-top: 20px;
   overflow: hidden;
@@ -868,52 +811,10 @@ ul li a:hover {
   content: "</AK>";
   color: orange;
   opacity: 40%;
-  font-size: 30px;
-  margin-left: 180px;
+  font-size: 26px;
 }
 
 /* --- End of top-paragraph --- */
-/* -- bottom-paragraph -- */
-/* .bottom-paragraph {
-  width: 100vw;
-  height: 140px;
-  margin-top: 10px;
-}
-
-.name {
-  color: #2EC4B6;
-  font-size: 22px;
-  margin-left: 350px;
-}
-
-.name::before {
-  content: "<position>";
-  color: orange;
-  opacity: 40%;
-  font-size: 32px;
-}
-
-.job {
-  color: #2EC4B6;
-  font-size: 22px;
-  margin-left: 650px;
-  margin-top: 30px;
-}
-
-.position-end {
-  margin-left: 380px;
-  margin-top: 20px;
-}
-
-.position-end::before {
-  content: "</position>";
-  color: orange;
-  opacity: 40%;
-  font-size: 32px;
-  margin-top: 80px;
-}
- */
-/* -- End of bottom-paragraph -- */
 /* -- social-media bar -- */
 .footer {
   width: 100vw;
@@ -989,7 +890,7 @@ ul li a:hover {
 
 .straight {
   width: 1000px;
-  height: 350px;
+  height: 400px;
   background-color: #FF8811;
   border: 3px solid #2EC4B6;
   align-self: center;
@@ -1005,6 +906,16 @@ ul li a:hover {
   font-size: 40px;
   color: #E71D36;
   padding-left: 20px;
+}
+.straight #more {
+  display: none;
+}
+.straight #btn {
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  color: #2EC4B6;
+  font-size: 14px;
 }
 
 /* -- End of about me section -- */
@@ -1068,5 +979,2445 @@ ul li a:hover {
 }
 
 /* -- End of skills & languages section -- */
+/* responsive & media queries changes */
+@media screen and (max-width: 1440px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header ul li {
+    margin-top: 20px;
+  }
+
+  .mainContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-paragraph {
+    width: 100vw;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .portfolio {
+    font-size: 26px;
+  }
+
+  .portfolio::before {
+    font-size: 26px;
+  }
+
+  .css-typing p {
+    font-size: 22px;
+  }
+
+  .line-1::before {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  .line-2::after {
+    font-size: 22px;
+  }
+
+  .line-4::before {
+    font-size: 26px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 400px;
+  }
+
+  .slider {
+    width: 620px;
+    height: 400px;
+    margin: 0;
+    margin-right: 15px;
+  }
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-1, .banner-2 {
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+  }
+  .banner-1 p, .banner-2 p {
+    font-size: 14px;
+  }
+
+  .banner-1 {
+    margin-top: 10px;
+    margin: 10px 250px 15px 0;
+  }
+
+  .banner-2 {
+    margin-right: 220px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .footer .icon-bar {
+    width: 660px;
+    height: 60px;
+    padding-right: 15px;
+  }
+  .footer .icon-bar a {
+    font-size: 20px;
+    margin-left: 8px;
+    padding: 7px;
+  }
+  .footer .icon-bar p {
+    margin-right: 150px;
+    font-size: 14px;
+  }
+
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-1 {
+    width: 100vw;
+    height: 80px;
+    margin-top: 20px;
+  }
+  .ribbon-1 p {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .diagonal {
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+  }
+
+  .straight {
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .straight p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #btn {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    color: #2EC4B6;
+    font-size: 12px;
+  }
+
+  .break {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .skills {
+    width: 100vw;
+    height: 1200px;
+  }
+
+  .ribbon-2 {
+    width: 100vw;
+    height: 80px;
+    margin-top: 40px;
+  }
+  .ribbon-2 p {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .wrapper {
+    margin-top: 150px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .My-languages img {
+    width: 520px;
+    height: 400px;
+  }
+  .wrapper .Programing-skills img {
+    width: 520px;
+    height: 400px;
+    margin-top: 60px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 1050px;
+    margin-left: 660px;
+  }
+  .center-logo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .ribbon-3 {
+    width: 100vw;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .ribbon-3 p {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .projects-grid {
+    max-width: 800px;
+    margin-top: 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #project {
+    width: 480px;
+    height: 380px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+  }
+  #project #browser {
+    width: 480px;
+    height: 380px;
+    margin-top: 15px;
+    align-self: center;
+  }
+  #project #browser img {
+    width: 480px;
+    height: 310px;
+  }
+  #project .projectBanner {
+    width: 150px;
+    height: 50px;
+    align-self: flex-end;
+    margin-right: -80px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  /*this is btn under each project's browser*/
+  #project .moreAbout {
+    width: 220px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 0;
+    padding-top: 10px;
+  }
+  #project .moreAbout p {
+    font-size: 14px;
+  }
+
+  .top {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .top img {
+    width: 150px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header ul li {
+    margin-top: 20px;
+  }
+
+  .mainContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-paragraph {
+    width: 100vw;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .portfolio {
+    font-size: 20px;
+  }
+
+  .portfolio::before {
+    font-size: 20px;
+  }
+
+  .css-typing p {
+    font-size: 16px;
+  }
+
+  .line-1::before {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .line-2::after {
+    font-size: 16px;
+  }
+
+  .line-4::before {
+    font-size: 20px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 350px;
+  }
+
+  .slider {
+    width: 420px;
+    height: 300px;
+    margin: 0;
+    margin-right: 15px;
+  }
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-1, .banner-2 {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+  }
+  .banner-1 p, .banner-2 p {
+    font-size: 12px;
+  }
+
+  .banner-1 {
+    margin-top: 10px;
+    margin: 10px 60px 15px 0;
+  }
+
+  .banner-2 {
+    margin-right: 30px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .footer .icon-bar {
+    width: 260px;
+    height: 40px;
+    padding-right: 15px;
+  }
+  .footer .icon-bar a {
+    font-size: 10px;
+    margin-left: 8px;
+    padding: 7px;
+  }
+  .footer .icon-bar p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-1 {
+    width: 100vw;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .ribbon-1 p {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .diagonal {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+  }
+
+  .straight {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .straight p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #btn {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    color: #2EC4B6;
+    font-size: 12px;
+  }
+
+  .break {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .skills {
+    width: 100vw;
+    height: 1000px;
+  }
+
+  .ribbon-2 {
+    width: 100vw;
+    height: 60px;
+    margin-top: 40px;
+  }
+  .ribbon-2 p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    margin-top: 130px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .My-languages img {
+    width: 420px;
+    height: 350px;
+  }
+  .wrapper .Programing-skills img {
+    width: 420px;
+    height: 350px;
+    margin-top: 40px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 900px;
+    margin-left: 330px;
+  }
+  .center-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .ribbon-3 {
+    width: 100vw;
+    height: 60px;
+    margin-top: 10px;
+  }
+  .ribbon-3 p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .projects-grid {
+    max-width: 600px;
+    margin-top: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #project {
+    width: 480px;
+    height: 380px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+  }
+  #project #browser {
+    width: 480px;
+    height: 380px;
+    margin-top: 15px;
+    align-self: center;
+  }
+  #project #browser img {
+    width: 480px;
+    height: 380px;
+  }
+  #project .projectBanner {
+    width: 120px;
+    height: 40px;
+    align-self: flex-end;
+    margin-right: -50px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /*this is btn under each project's browser*/
+  #project .moreAbout {
+    width: 170px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  #project .moreAbout p {
+    font-size: 12px;
+  }
+
+  .top {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 700px;
+    margin-bottom: 40px;
+  }
+  .top img {
+    width: 150px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header ul li {
+    margin-top: 20px;
+  }
+
+  .mainContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-paragraph {
+    width: 100vw;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .portfolio {
+    font-size: 20px;
+  }
+
+  .portfolio::before {
+    font-size: 20px;
+  }
+
+  .css-typing p {
+    font-size: 16px;
+  }
+
+  .line-1::before {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .line-2::after {
+    font-size: 16px;
+  }
+
+  .line-4::before {
+    font-size: 20px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 350px;
+  }
+
+  .slider {
+    width: 420px;
+    height: 300px;
+    margin: 0;
+    margin-right: 15px;
+  }
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-1, .banner-2 {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+  }
+  .banner-1 p, .banner-2 p {
+    font-size: 12px;
+  }
+
+  .banner-1 {
+    margin-top: 10px;
+    margin: 10px 60px 15px 0;
+  }
+
+  .banner-2 {
+    margin-right: 30px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .footer .icon-bar {
+    width: 400px;
+    height: 40px;
+    padding-right: 15px;
+  }
+  .footer .icon-bar a {
+    font-size: 10px;
+    margin-left: 8px;
+    padding: 7px;
+  }
+  .footer .icon-bar p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-1 {
+    width: 100vw;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .ribbon-1 p {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .diagonal {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+  }
+
+  .straight {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .straight p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #btn {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    color: #2EC4B6;
+    font-size: 12px;
+  }
+
+  .break {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .skills {
+    width: 100vw;
+    height: 1000px;
+  }
+
+  .ribbon-2 {
+    width: 100vw;
+    height: 60px;
+    margin-top: 40px;
+  }
+  .ribbon-2 p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    margin-top: 130px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .My-languages img {
+    width: 420px;
+    height: 350px;
+  }
+  .wrapper .Programing-skills img {
+    width: 420px;
+    height: 350px;
+    margin-top: 40px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 900px;
+    margin-left: 330px;
+  }
+  .center-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .ribbon-3 {
+    width: 100vw;
+    height: 60px;
+    margin-top: 10px;
+  }
+  .ribbon-3 p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .projects-grid {
+    max-width: 600px;
+    margin-top: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #project {
+    width: 480px;
+    height: 380px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+  }
+  #project #browser {
+    width: 480px;
+    height: 380px;
+    margin-top: 15px;
+    align-self: center;
+  }
+  #project #browser img {
+    width: 480px;
+    height: 310px;
+  }
+  #project .projectBanner {
+    width: 150px;
+    height: 40px;
+    align-self: flex-end;
+    margin-right: -90px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /*this is btn under each project's browser*/
+  #project .moreAbout {
+    width: 170px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  #project .moreAbout p {
+    font-size: 12px;
+  }
+
+  .top {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 700px;
+    margin-bottom: 40px;
+  }
+  .top img {
+    width: 150px;
+    height: 40px;
+  }
+
+  #one {
+    height: 450px;
+  }
+
+  .title {
+    width: 350px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 180px;
+    font-size: 22px;
+  }
+
+  .back {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .right-corner {
+    width: 180px;
+    height: 200px;
+  }
+
+  .turquoise-corner {
+    width: 100px;
+    height: 130px;
+  }
+
+  .red-corner {
+    width: 100px;
+    height: 130px;
+  }
+
+  .top-text {
+    width: 440px;
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    font-size: 32px;
+  }
+
+  .contact::before {
+    font-size: 32px;
+    margin-right: 30px;
+  }
+
+  .computer {
+    width: 300px;
+    font-size: 24px;
+  }
+
+  .computer::before {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .computer::after {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .line-3::before {
+    font-size: 32px;
+  }
+
+  form {
+    width: 700px;
+    height: 700px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    width: 600px;
+    padding: 10px;
+  }
+
+  input {
+    width: 400px;
+    height: 40px;
+  }
+
+  label {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+
+  #message {
+    width: 400px;
+    padding: 10px;
+  }
+
+  .btn2 {
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 250px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header ul li {
+    margin-top: 20px;
+  }
+
+  .mainContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-paragraph {
+    width: 100vw;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .portfolio {
+    font-size: 16px;
+  }
+
+  .portfolio::before {
+    font-size: 16px;
+  }
+
+  .css-typing p {
+    font-size: 13px;
+  }
+
+  .line-1::before {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .line-2::after {
+    font-size: 14px;
+  }
+
+  .line-4::before {
+    font-size: 16px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .slider {
+    width: 270px;
+    height: 150px;
+    margin: 0;
+    margin-right: 40px;
+  }
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-1, .banner-2 {
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+  }
+  .banner-1 p, .banner-2 p {
+    font-size: 9px;
+  }
+
+  .banner-1 {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin: 10px 15px 10px 0;
+  }
+
+  .banner-2 {
+    margin-right: 3px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .footer .icon-bar {
+    width: 260px;
+    height: 40px;
+    padding-right: 15px;
+  }
+  .footer .icon-bar a {
+    font-size: 10px;
+    margin-left: 8px;
+    padding: 7px;
+  }
+  .footer .icon-bar p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-1 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-1 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .diagonal {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  .straight {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .straight p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #btn {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    color: #2EC4B6;
+    font-size: 12px;
+  }
+
+  .break {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .skills {
+    width: 100vw;
+    height: 750px;
+  }
+
+  .ribbon-2 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-2 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    margin-top: 80px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .My-languages img {
+    width: 320px;
+    height: 250px;
+  }
+  .wrapper .Programing-skills img {
+    width: 320px;
+    height: 250px;
+    margin-top: 40px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 650px;
+    margin-left: 160px;
+  }
+  .center-logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .ribbon-3 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .ribbon-3 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .projects-grid {
+    max-width: 400px;
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #project {
+    width: 380px;
+    height: 280px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  #project #browser {
+    width: 380px;
+    height: 280px;
+    margin-top: 15px;
+    align-self: center;
+  }
+  #project #browser img {
+    width: 380px;
+    height: 210px;
+  }
+  #project .projectBanner {
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: -20px;
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  /*this is btn under each project's browser*/
+  #project .moreAbout {
+    width: 170px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  #project .moreAbout p {
+    font-size: 12px;
+  }
+
+  .top {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 300px;
+    margin-bottom: 40px;
+  }
+  .top img {
+    width: 150px;
+    height: 40px;
+  }
+
+  #one {
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 280px;
+    height: 50px;
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  .back {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .right-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .turquoise-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .red-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .top-text {
+    width: 340px;
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    font-size: 28px;
+  }
+
+  .contact::before {
+    font-size: 28px;
+    margin-right: 30px;
+  }
+
+  .computer {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .computer::before {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .computer::after {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .line-3::before {
+    font-size: 28px;
+  }
+
+  form {
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    width: 350px;
+    padding: 10px;
+  }
+
+  input {
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  label {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  #message {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .btn2 {
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header ul li {
+    margin-top: 20px;
+  }
+
+  .mainContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-paragraph {
+    width: 100vw;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .portfolio {
+    font-size: 16px;
+  }
+
+  .portfolio::before {
+    font-size: 16px;
+  }
+
+  .css-typing p {
+    font-size: 13px;
+  }
+
+  .line-1::before {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .line-2::after {
+    font-size: 14px;
+  }
+
+  .line-4::before {
+    font-size: 16px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .slider {
+    width: 270px;
+    height: 150px;
+    margin: 0;
+    margin-right: 40px;
+  }
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-1, .banner-2 {
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+  }
+  .banner-1 p, .banner-2 p {
+    font-size: 9px;
+  }
+
+  .banner-1 {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin: 10px 15px 10px 0;
+  }
+
+  .banner-2 {
+    margin-right: 3px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .footer .icon-bar {
+    width: 260px;
+    height: 40px;
+    padding-right: 15px;
+  }
+  .footer .icon-bar a {
+    font-size: 10px;
+    margin-left: 8px;
+    padding: 7px;
+  }
+  .footer .icon-bar p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-1 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-1 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .diagonal {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  .straight {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .straight p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #btn {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    color: #2EC4B6;
+    font-size: 12px;
+  }
+
+  .break {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .skills {
+    width: 100vw;
+    height: 750px;
+  }
+
+  .ribbon-2 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-2 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    margin-top: 80px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .My-languages img {
+    width: 320px;
+    height: 250px;
+  }
+  .wrapper .Programing-skills img {
+    width: 320px;
+    height: 250px;
+    margin-top: 40px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 650px;
+    margin-left: 160px;
+  }
+  .center-logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .ribbon-3 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .ribbon-3 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .projects-grid {
+    max-width: 400px;
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #project {
+    width: 380px;
+    height: 280px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  #project #browser {
+    width: 380px;
+    height: 280px;
+    margin-top: 15px;
+    align-self: center;
+  }
+  #project #browser img {
+    width: 380px;
+    height: 210px;
+  }
+  #project .projectBanner {
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: -20px;
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  /*this is btn under each project's browser*/
+  #project .moreAbout {
+    width: 170px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  #project .moreAbout p {
+    font-size: 12px;
+  }
+
+  .top {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 300px;
+    margin-bottom: 40px;
+  }
+  .top img {
+    width: 150px;
+    height: 40px;
+  }
+
+  #one {
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 280px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 24px;
+  }
+
+  .back {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .right-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .turquoise-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .red-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .top-text {
+    width: 340px;
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    font-size: 28px;
+  }
+
+  .contact::before {
+    font-size: 28px;
+    margin-right: 30px;
+  }
+
+  .computer {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .computer::before {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .computer::after {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .line-3::before {
+    font-size: 28px;
+  }
+
+  form {
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    width: 350px;
+    padding: 10px;
+  }
+
+  input {
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  label {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  #message {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .btn2 {
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header ul li {
+    margin-top: 20px;
+  }
+
+  .mainContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-paragraph {
+    width: 100vw;
+    margin-top: 10px;
+    padding: 7px;
+  }
+
+  .portfolio {
+    font-size: 16px;
+  }
+
+  .portfolio::before {
+    font-size: 16px;
+  }
+
+  .css-typing {
+    padding: 0 0 5px 10px;
+  }
+  .css-typing p {
+    font-size: 12px;
+  }
+
+  .line-1::before {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .line-2::after {
+    font-size: 14px;
+  }
+
+  .line-4::before {
+    font-size: 16px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .slider {
+    width: 270px;
+    height: 150px;
+    margin: 0;
+    margin-right: 40px;
+  }
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-1, .banner-2 {
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+  }
+  .banner-1 p, .banner-2 p {
+    font-size: 9px;
+  }
+
+  .banner-1 {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin: 10px 15px 10px 0;
+  }
+
+  .banner-2 {
+    margin-right: 3px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .footer .icon-bar {
+    width: 260px;
+    height: 40px;
+    padding-right: 15px;
+  }
+  .footer .icon-bar a {
+    font-size: 10px;
+    margin-left: 8px;
+    padding: 7px;
+  }
+  .footer .icon-bar p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-1 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-1 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .diagonal {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  .straight {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .straight p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #btn {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    color: #2EC4B6;
+    font-size: 12px;
+  }
+
+  .break {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .skills {
+    width: 100vw;
+    height: 680px;
+  }
+
+  .ribbon-2 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-2 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    margin-top: 80px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .My-languages img {
+    width: 220px;
+    height: 200px;
+  }
+  .wrapper .Programing-skills img {
+    width: 220px;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 550px;
+    margin-left: 140px;
+  }
+  .center-logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .ribbon-3 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .ribbon-3 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .projects-grid {
+    max-width: 375px;
+    height: 100vh;
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #project {
+    width: 330px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  #project #browser {
+    width: 330px;
+    height: 200px;
+    margin-top: 15px;
+    align-self: center;
+  }
+  #project #browser img {
+    width: 330px;
+    height: 200px;
+  }
+  #project .projectBanner {
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+    margin-top: 20px;
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  /*this is btn under each project's browser*/
+  #project .moreAbout {
+    width: 170px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  #project .moreAbout p {
+    font-size: 12px;
+  }
+
+  .top {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .top img {
+    width: 150px;
+    height: 40px;
+  }
+
+  #one {
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 280px;
+    height: 50px;
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  .back {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .right-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .turquoise-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .red-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .top-text {
+    width: 340px;
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    font-size: 28px;
+  }
+
+  .contact::before {
+    font-size: 28px;
+    margin-right: 30px;
+  }
+
+  .computer {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .computer::before {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .computer::after {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .line-3::before {
+    font-size: 28px;
+  }
+
+  form {
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    width: 350px;
+    padding: 10px;
+  }
+
+  input {
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  label {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  #message {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .btn2 {
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header ul li {
+    margin-top: 20px;
+  }
+
+  .mainContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-paragraph {
+    width: 100vw;
+    margin-top: 10px;
+    padding: 7px;
+  }
+
+  .portfolio {
+    font-size: 16px;
+  }
+
+  .portfolio::before {
+    font-size: 16px;
+  }
+
+  .css-typing {
+    padding: 0 0 5px 10px;
+  }
+  .css-typing p {
+    font-size: 10px;
+  }
+
+  .line-1::before {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .line-2::after {
+    font-size: 14px;
+  }
+
+  .line-4::before {
+    font-size: 16px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .slider {
+    width: 250px;
+    height: 150px;
+    margin: 0;
+    align-self: flex-start;
+  }
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-1, .banner-2 {
+    width: 80px;
+    height: 25px;
+    padding: 5px;
+  }
+  .banner-1 p, .banner-2 p {
+    font-size: 8px;
+  }
+
+  .banner-1 {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin: 10px 15px 10px 0;
+  }
+
+  .banner-2 {
+    margin-right: 3px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .footer .icon-bar {
+    width: 260px;
+    height: 40px;
+    padding-right: 15px;
+  }
+  .footer .icon-bar a {
+    font-size: 10px;
+    margin-left: 8px;
+    padding: 7px;
+  }
+  .footer .icon-bar p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-1 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-1 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .diagonal {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  .straight {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .straight p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #btn {
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    color: #2EC4B6;
+    font-size: 10px;
+  }
+
+  .break {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .skills {
+    width: 100vw;
+    height: 680px;
+  }
+
+  .ribbon-2 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .ribbon-2 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    margin-top: 80px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .My-languages img {
+    width: 220px;
+    height: 200px;
+  }
+  .wrapper .Programing-skills img {
+    width: 220px;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 550px;
+    margin-left: 120px;
+  }
+  .center-logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ribbon-3 {
+    width: 100vw;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .ribbon-3 p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .projects-grid {
+    max-width: 320px;
+    height: 100vh;
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #project {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  #project #browser {
+    width: 300px;
+    height: 200px;
+    margin-top: 15px;
+    align-self: center;
+  }
+  #project #browser img {
+    width: 300px;
+    height: 140px;
+  }
+  #project .projectBanner {
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: -5px;
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  /*this is btn under each project's browser*/
+  #project .moreAbout {
+    width: 150px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  #project .moreAbout p {
+    font-size: 10px;
+  }
+
+  .top {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 425px;
+    margin-bottom: 40px;
+  }
+  .top img {
+    width: 200px;
+    height: 40px;
+  }
+
+  #one {
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 280px;
+    height: 50px;
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  .back {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .right-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .turquoise-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .red-corner {
+    width: 0;
+    height: 0;
+  }
+
+  .top-text {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    font-size: 28px;
+  }
+
+  .contact::before {
+    font-size: 28px;
+    margin-right: 30px;
+  }
+
+  .computer {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .computer::before {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .computer::after {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .line-3::before {
+    font-size: 28px;
+  }
+
+  form {
+    width: 310px;
+    height: 600px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    width: 320px;
+    padding: 10px;
+  }
+
+  input {
+    width: 180px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  label {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  #message {
+    width: 180px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .btn2 {
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

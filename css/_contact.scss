@@ -1,12 +1,12 @@
 /* ---header ---*/
 #one {
   width: 100vw;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: space-between;
-
 }
 
+/* ---end of logo section ---*/
 .title {
   width: 500px;
   height: 60px;
@@ -18,54 +18,12 @@
   line-height: 60px;
   color: #fdfffc;
   font-size: 32px;
-
 }
-
-/* --- logo start ---*/
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 140;
-  height: 140px;
-  margin-left: 30px;
-  margin-top: 50px;
-  position: relative;
-}
-
-
-.tag-border {
-  width: 50px;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 45px;
-  border-top: 3px solid #e71d36;
-  border-bottom: 3px solid #e71d36;
-  border-right: 3px solid #e71d36;
-  position: relative;
-  z-index: 1;
-}
-
-.logo-border {
-  width: 150px;
-  height: 100px;
-  margin-top: 40px;
-  margin-left: 40px;
-  border-radius: 15px;
-  border: 3px solid #2ec4b6;
-  background-color: #ff8811;
-  transform: rotate(45deg);
-  z-index: 0;
-}
-
-/* ---end of logo section ---*/
 
 /*--- CLICK-ITEM back to portfolio option ---*/
 .back {
   font-size: 20px;
-  margin-top: 20px;
-
-
+  margin-top: 40px;
   a {
     text-decoration: none;
     color: #FF8811;
@@ -108,22 +66,21 @@
   margin-left: 50px;
   z-index: 10;
 }
-
 /* ---End of right corner ---*/
 /* --- End of header styling ---*/
 
 /*---- top text section ----*/
 .top-text {
-  width: 100vw;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
-  border: 1px dotted red;
 }
 
 .contact {
   font-size: 32px;
   color: #2ec4b6;
-  margin-left: 450px;
-  // margin-bottom: 20px;
 }
 
 .contact::before {
@@ -136,14 +93,14 @@
 
 /* ---- type-writer effect ----*/
 .computer {
-  width: 400px;
-  font-size: 26px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 22px;
   color: #2ec4b6;
-  margin-left: 650px;
+  margin-bottom: 30px;
   white-space: nowrap;
   transform: translateY(50%);
   overflow: hidden;
-  border: 2px solid white;
 }
 
 .computer::before {
@@ -168,7 +125,6 @@
   color: orange;
   opacity: 40%;
   font-size: 32px;
-  margin-left: 450px;
 }
 
 /*--- TOP-TEXT ANIMATION CONTACT-FORM ---*/
@@ -181,12 +137,10 @@
   from {
     width: 0px;
   }
-
   to {
-    width: 100%;
+    width: 65%;
   }
 }
-
 /*---- End of top text section ----*/
 
 /* ---- Form styling ---- */
@@ -206,7 +160,6 @@ form {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-
 }
 
 input {
@@ -230,13 +183,14 @@ label {
   width: 450px;
   border: 1px solid #fdfffc;
   border-radius: 20px;
+  padding: 10px;
 }
 
 textarea:focus {
   background-color: rgba(46, 196, 182, 0.8);
 }
 
-.btn {
+.btn2 {
   width: 170px;
   height: 40px;
   margin-top: 50px;
@@ -249,7 +203,7 @@ textarea:focus {
   font-size: 20px;
 }
 
-.btn:hover {
+.btn2:hover {
   background-color: rgba(144, 224, 239, 0.8);
   cursor: pointer;
 }

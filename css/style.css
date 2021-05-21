@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Big Shoulders Display', cursive;
   font-style: italic;
   font: bold;
   font-weight: 800;
@@ -862,11 +862,11 @@ textarea:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100vw;
-  height: 160px;
+  height: 140px;
 }
 
 /* --- logo start ---*/
-.logo {
+.logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,23 +876,16 @@ textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 140;
+  margin-left: 30px;
+  width: 120;
   height: 140px;
-  margin-top: 20px;
   position: relative;
 }
 
-.tag {
-  width: 80px;
-  margin-top: 3px;
-  margin-left: -35px;
-}
-
 .tag-border {
-  width: 50px;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 45px;
+  width: 30px;
+  height: 25px;
+  margin-left: 15px;
   border-top: 3px solid #E71D36;
   border-bottom: 3px solid #E71D36;
   border-right: 3px solid #E71D36;
@@ -900,9 +893,15 @@ textarea:focus {
   z-index: 1;
 }
 
+.tag {
+  width: 50px;
+  margin-left: -25px;
+}
+
 .logo-border {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 60px;
+  margin: 0 auto;
   border-radius: 15px;
   position: absolute;
   border: 3px solid #2EC4B6;
@@ -1022,7 +1021,7 @@ ul li a:hover {
   content: "<AK>";
   color: orange;
   opacity: 40%;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .portfolio {
@@ -1035,7 +1034,7 @@ ul li a:hover {
   content: "<h1>";
   color: orange;
   opacity: 40%;
-  font-size: 28px;
+  font-size: 24px;
   margin-right: 30px;
 }
 
@@ -1105,7 +1104,7 @@ ul li a:hover {
   content: "</h1>";
   color: orange;
   opacity: 40%;
-  font-size: 26px;
+  font-size: 22px;
   margin-left: 30px;
   padding-top: 20px;
   overflow: hidden;
@@ -1116,7 +1115,7 @@ ul li a:hover {
   content: "</AK>";
   color: orange;
   opacity: 40%;
-  font-size: 30px;
+  font-size: 26px;
   margin-left: 180px;
 }
 

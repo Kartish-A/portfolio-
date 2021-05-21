@@ -1,29 +1,31 @@
 .mainContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 98vw;
+  margin:0 auto;  
 }
 
 /* ---- main slideshow ---- */
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 60vw;
-  height: 420px;
-  margin-top: 25px;
+  height: 450px;
+  margin-top: 35px;
 }
 
 .slider {
   width: 650px;
   height: 340px;
-  display: block;
   overflow: hidden;
   position: absolute;
-  justify-self: center;
-  align-self: center;
   z-index: 1;
 
   img {
     position: absolute;
+    width: 650px;
+    height: 340px;
     top: 100%;
     left: 0;
     animation: 12s autoplay infinite ease-in-out;
@@ -80,14 +82,14 @@
 
 .banner-1 {
   margin-top: 40px;
-  margin-right: 100px;
+  margin-right: 80px;
   margin-bottom: 20px;
   text-align: center;
   padding: 10px;
 }
 
 .banner-2 {
-  margin-right: 80px;
+  margin-right: 60px;
   text-align: center;
   padding: 10px;
 }

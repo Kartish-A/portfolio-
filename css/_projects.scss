@@ -42,6 +42,10 @@
     align-self: center;
     background-color: #fdfffc;
     box-shadow: -10px 10px 5px #E71D36;
+    img {
+      width: 600px;
+      height: 300px ;
+    }
   }
 
   #browser:hover {
@@ -96,11 +100,9 @@
   .one>*:nth-child(1) {
     animation-delay: 0s;
   }
-
   .one>*:nth-child(2) {
     animation-delay: 4s;
   }
-
   .one>*:nth-child(3) {
     animation-delay: 8s;
   }
@@ -117,19 +119,15 @@
     0% {
       right: 100%
     }
-
     4% {
       right: 0%
     }
-
     33.33% {
       right: 0%
     }
-
     37.33% {
       right: -100%
     }
-
     100% {
       right: -100%
     }
@@ -138,11 +136,9 @@
   .two>*:nth-child(1) {
     animation-delay: 0s;
   }
-
   .two>*:nth-child(2) {
     animation-delay: 3s;
   }
-
   .two>*:nth-child(3) {
     animation-delay: 6s;
   }
@@ -159,19 +155,15 @@
     0% {
       left: 100%
     }
-
     4% {
       left: 0%
     }
-
     33.33% {
       left: 0%
     }
-
     37.33% {
       left: -100%
     }
-
     100% {
       left: -100%
     }
@@ -180,15 +172,12 @@
   .three>*:nth-child(1) {
     animation-delay: 0s;
   }
-
   .three>*:nth-child(2) {
     animation-delay: 2s;
   }
-
   .three>*:nth-child(3) {
     animation-delay: 4s;
   }
-
   .three>*:nth-child(4) {
     animation-delay: 6s;
   }
@@ -205,19 +194,15 @@
     0% {
       top: 100%
     }
-
     4% {
       top: 0%
     }
-
     33.33% {
       top: 0%
     }
-
     37.33% {
       top: -100%
     }
-
     100% {
       top: -100%
     }
@@ -226,15 +211,12 @@
   .four>*:nth-child(1) {
     animation-delay: 0s;
   }
-
   .four>*:nth-child(2) {
     animation-delay: 5s;
   }
-
   .four>*:nth-child(3) {
     animation-delay: 10s;
   }
-
   .four>*:nth-child(4) {
     animation-delay: 15s;
   }
@@ -266,6 +248,7 @@
     position: absolute;
     align-self: flex-end;
     margin-top: 80px;
+    margin-right: 30px;
     border-radius: 20px;
     text-align: center;
     padding: 15px;
@@ -306,8 +289,7 @@
   width: 200px;
   height: 50px;
   margin: 0 auto;
-  margin-bottom: 200px;
-
+  margin-bottom: 100px;
   img {
     width: 200px;
     height: 50px;

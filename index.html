@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- links below as first step to create responsive website -->
@@ -9,7 +10,9 @@
     <title>AK-Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Montserrat&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -17,90 +20,72 @@
     <!--header-->
     <header class="header">
 
-    <!--logo-->
-        <div class="logo">
+        <!--logo-->
+        <div class="logo-container">
             <div class="tag-border">
                 <div class="tag">
-                    <img src="images/logo/-AK.png"  alt="logo" width="80" >
+                    <img src="images/logo/-AK.png" alt="logo" width="50">
                 </div>
-            </div>                 
+            </div>
+            <div class="logo-border"></div>
         </div>
-        <div class="logo-border"></div>
-        
 
-    <!--main menu-->
+        <!--main menu-->
         <div class="main-menu">
             <ul>
                 <li>
                     <span class="hashtag">#</span>
-                    <a href ="#about-me"> about me</a>
+                    <a href="#about-me"> about me</a>
                 </li>
                 <li>
                     <span class="hashtag">#</span>
-                    <a href ="#Projects"> projects</a>
+                    <a href="#Projects"> projects</a>
                 </li>
                 <li>
                     <span class="hashtag">#</span>
-                    <a href ="contact.html" > contact</a>
+                    <a href="contact.html"> contact</a>
                 </li>
             </ul>
         </div>
 
-    <!-- top-right-corner-->
-        <!-- <div class="corner-top">
-            <div class="corner-top-left"></div>
-            <div class="corner-top-right"></div>
-        </div> -->
-
     </header>
 
-    
     <!-- i put the typeWriter and the main slide-show in one div and the big phote in sibling div, both divs are going to be in a parent div that has display:flex property-->
     <div class="mainContainer">
         <div class="typeWriterAndSlide">
             <!--top-paragraph-->
             <section class="top-paragraph">
-                    <div class="portfolio"> Portfolio </div> 
-                    <div class="css-typing">
-                        <p class="line-1"> form the world of development I choose:</p>
-                        <p class="line-2">programing!</p>    
-                    </div>
-                    <div class="AK-closing line-4"></div>
+                <p class="portfolio"> Portfolio </p>
+                <div class="css-typing">
+                    <p class="line-1"> form the world of development I choose:</p>
+                    <p class="line-2">programing!</p>
+                </div>
+                <div class="AK-closing line-4"></div>
             </section>
             <!--End Of Top-Paragraph-->
 
             <!-- main auto slide-show section -->
             <div class="main">
                 <slider class="slider">
-                    <img src="/images/main-slide/welcomeToMyP.png" width="650" height="340" alt="">
-                    <img src="/images/main-slide/myNameIs.png" width="650" height="340" alt="">
-                    <img src="/images/main-slide/myBackground.png" width="650" height="340" alt="">
+                    <img src="/images/main-slide/welcomeToMyP.png" class="sliderImg" alt="">
+                    <img src="/images/main-slide/myNameIs.png" class="sliderImg" alt="">
+                    <img src="/images/main-slide/myBackground.png" class="sliderImg" alt="">
                 </slider>
                 <div class="banner-1">
-                    <p>welcome to my portfolio!</p> </div>
-                <div class="banner-2"> I'm always in <br> a state of redesign</div>
+                    <p>welcome to my portfolio!</p>
+                </div>
+                <div class="banner-2">
+                    <p>I'm always in a state of redesign</p>
+                </div>
             </div>
         </div>
-        <div>
-            <img src="./images/Group 56.png" width="600" height="680" alt="">
-        </div> 
     </div>
-
-    <!-- bottom-paragraph -->
-    <!--  <div class="bottom-paragraph">
-        <div class="name"> My name is:<code> Abdoulfatah Kartish </code> </div>
-        <div class="job">I'm a full-stack developer</div>
-        <div class="position-end"></div>
-    </div> -->
 
     <!-- social-media bar -->
     <div class="footer">
         <div class="icon-bar">
             <p>by Abdoulfatah Kartish &#169;2020</p>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
             <a href="#" class="github"><i class="fa fa-github"></i></a>
         </div>
     </div>
@@ -112,8 +97,19 @@
             <p>about me</p>
         </div>
         <div class="diagonal"></div>
-        <div class="straight">
-            <p><span class="first-letter">l</span>orem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsam dolores neque temporibus, necessitatibus aspernatur aliquid! Explicabo accusantium rem ea ratione unde iusto aspernatur recusandae nam nobis dolore repellendus facere quo illum laboriosam voluptatem consectetur omnis, pariatur quam aperiam corrupti labore assumenda? Non, excepturi suscipit quae dolorum labore rem consequatur eaque corporis. Numquam cumque nostrum alias, aliquid sequi, dolore, eius animi deleniti impedit fugit minima repellat. In vel excepturi nihil praesentium delectus, earum nam explicabo sit magni voluptatum. Id sit fugiat fugit.</p>
+        <div class="straight" id="straight">
+            <p><span class="first-letter">l</span>orem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsam
+                dolores neque temporibus, necessitatibus aspernatur aliquid! Explicabo accusantium rem ea ratione
+                unde<span id="dots">...</span>
+                <span id="more"> iusto aspernatur recusandae nam nobis dolore repellendus facere quo illum laboriosam
+                    voluptatem
+                    consectetur omnis, pariatur quam aperiam corrupti labore assumenda? Non, excepturi suscipit quae
+                    dolorum
+                    labore rem consequatur eaque corporis. Numquam cumque nostrum alias, aliquid sequi, dolore, eius
+                    animi
+                    deleniti impedit fugit minima repellat. In vel excepturi nihil praesentium delectus.</span>
+            </p>
+            <button id="btn" onclick="myFunction()">read more</button>
         </div>
     </section>
 
@@ -131,7 +127,7 @@
             <div class="My-languages">
                 <img src="/images/languages.png" alt="Programing-languages">
             </div>
-            
+
             <div class="Programing-skills">
                 <img src="/images/skills.png" alt="Programing-skills">
             </div>
@@ -142,23 +138,23 @@
         </div>
 
     </section>
-    
+
     <div class="break"></div>
     <!-- End of languages & skills section -->
 
-        <!-- my projects section -->
+    <!-- my projects section -->
     <section id="Projects" class="container">
         <div class="ribbon-3">
             <p>My projects</p>
         </div>
         <div class="projects-grid">
 
-        <!-- first project section -->
+            <!-- first project section -->
             <div id="project" class="first">
                 <div id="browser" class="one">
-                    <img src="/images/project-1/notebook-336634_1920.jpg" width="600" height="300" alt="">
-                    <img src="/images/project-1/wordpress-3288417_1280.png" width="600" height="300" alt="">
-                    <img src="/images/project-1/opportunity-2105406_1920.jpg" width="600" height="300" alt="">
+                    <img src="/images/project-1/notebook-336634_1920.jpg" alt="">
+                    <img src="/images/project-1/wordpress-3288417_1280.png" alt="">
+                    <img src="/images/project-1/opportunity-2105406_1920.jpg" alt="">
                 </div>
                 <div class="moreAbout">
                     <p>more about this Project</p>
@@ -166,7 +162,7 @@
                 <div class="projectBanner"> My Work1</div>
             </div>
 
-        <!-- second project section --> 
+            <!-- second project section -->
             <div id="project" class="second">
                 <div id="browser" class="two">
                     <img src="/images/project-2/website-1624028_1280.png" width="600" height="300" alt="">
@@ -179,7 +175,7 @@
                 <div class="projectBanner"> My Work2</div>
             </div>
 
-        <!-- third project section -->
+            <!-- third project section -->
             <div id="project" class="third">
                 <div id="browser" class="three">
                     <img src="/images/project-3/blog-3383287_1920.jpg" width="600" height="300" alt="">
@@ -193,12 +189,12 @@
                 <div class="projectBanner"> My Work3</div>
             </div>
 
-        <!-- fourth project section -->
+            <!-- fourth project section -->
             <div id="project" class="fourth">
                 <div id="browser" class="four">
                     <img src="/images/project-4/code-1076533_1920.jpg" width="600" height="300" alt="">
                     <img src="/images/project-4/matrix-2953869_1920.jpg" width="600" height="300" alt="">
-                    <img src="/images/project-4/workplace-3233497_1920.jpg"width="600" height="300"  alt="">
+                    <img src="/images/project-4/workplace-3233497_1920.jpg" width="600" height="300" alt="">
                     <img src="/images/project-4/social-networking-2187996_1920.jpg" width="600" height="300" alt="">
                 </div>
                 <div class="moreAbout">
@@ -209,12 +205,35 @@
 
         </div>
 
-    </section>  
+    </section>
 
     <!-- go top button-->
     <div class="top">
-        <a href=""><img src="/images/go-top.png"  alt="go top button "></a>
-    </div> 
+        <a href=""><img src="/images/go-top.png" alt="go top button "></a>
+    </div>
 
-    </body>
+
+    <script>
+        function myFunction() {
+            const dots = document.getElementById('dots');
+            const moreText = document.getElementById('more');
+            const btnText = document.getElementById('btn');
+            const textDiv = document.getElementById('straight')
+
+            if (dots.style.display === 'none') {
+                dots.style.display = 'inline';
+                btnText.innerHTML = 'read more';
+                moreText.style.display = 'none';
+                textDiv.style.height = '200px';
+            } else {
+                dots.style.display = 'none';
+                btnText.innerHTML = 'read less';
+                moreText.style.display = 'inline'
+                textDiv.style.height = '440px';
+            }
+        }
+    </script>
+
+</body>
+
 </html>
