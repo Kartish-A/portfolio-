@@ -851,7 +851,7 @@ ul li a:hover {
 .about-me {
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/backgrounds/pear-4056741_1920.jpg);
+  background-image: url(/Images/backgrounds/pear-4056741_1920.jpg);
   background-size: cover;
   background-position: center;
   /*min-height: 600px;*/
@@ -928,7 +928,7 @@ ul li a:hover {
 .skills {
   width: 100vw;
   height: 1100px;
-  background-image: url(/images/backgrounds/home-office-1207834_1920.jpg);
+  background-image: url(/Images/backgrounds/home-office-1207834_1920.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
