@@ -449,7 +449,7 @@ body {
 }
 .back a {
   text-decoration: none;
-  color: #FF8811;
+  color: #fdfffc;
   transition: 0.5s;
 }
 .back a:hover {
@@ -612,7 +612,7 @@ textarea:focus {
 .btn2 {
   width: 170px;
   height: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 400px;
   text-align: center;
   border-radius: 40px;
