@@ -41,7 +41,7 @@
     margin-top: 20px;
     align-self: center;
     background-color: #fdfffc;
-    box-shadow: -10px 10px 5px #E71D36;
+    // box-shadow: -10px 10px 5px #E71D36;
     img {
       width: 600px;
       height: 300px ;
@@ -79,19 +79,15 @@
     0% {
       top: 100%
     }
-
     4% {
       top: 0%
     }
-
     33.33% {
       top: 0%
     }
-
     37.33% {
       top: -100%
     }
-
     100% {
       top: -100%
     }
@@ -101,10 +97,13 @@
     animation-delay: 0s;
   }
   .one>*:nth-child(2) {
-    animation-delay: 4s;
+    animation-delay: 3s;
   }
   .one>*:nth-child(3) {
-    animation-delay: 8s;
+    animation-delay: 6s;
+  }
+  .one>*:nth-child(4) {
+    animation-delay: 9s;
   }
 
   /* ---  animation slideshow for project 2 --- */
@@ -112,7 +111,7 @@
     position: absolute;
     right: 100%;
     top: 0%;
-    animation: 9s autoplay2 infinite ease-in-out;
+    animation: 14s autoplay2 infinite ease-in-out;
   }
 
   @keyframes autoplay2 {
@@ -137,10 +136,13 @@
     animation-delay: 0s;
   }
   .two>*:nth-child(2) {
-    animation-delay: 3s;
+    animation-delay: 4s;
   }
   .two>*:nth-child(3) {
-    animation-delay: 6s;
+    animation-delay: 8s;
+  }
+  .two>*:nth-child(4) {
+    animation-delay: 10s;
   }
 
   /* ---  animation slideshow for project 3 --- */

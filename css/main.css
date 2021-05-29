@@ -61,7 +61,6 @@ body {
   margin-top: 20px;
   align-self: center;
   background-color: #fdfffc;
-  box-shadow: -10px 10px 5px #E71D36;
 }
 #project #browser img {
   width: 600px;
@@ -110,16 +109,19 @@ body {
   animation-delay: 0s;
 }
 #project .one > *:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 #project .one > *:nth-child(3) {
-  animation-delay: 8s;
+  animation-delay: 6s;
+}
+#project .one > *:nth-child(4) {
+  animation-delay: 9s;
 }
 #project .two img {
   position: absolute;
   right: 100%;
   top: 0%;
-  animation: 9s autoplay2 infinite ease-in-out;
+  animation: 14s autoplay2 infinite ease-in-out;
 }
 @keyframes autoplay2 {
   0% {
@@ -142,10 +144,13 @@ body {
   animation-delay: 0s;
 }
 #project .two > *:nth-child(2) {
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 #project .two > *:nth-child(3) {
-  animation-delay: 6s;
+  animation-delay: 8s;
+}
+#project .two > *:nth-child(4) {
+  animation-delay: 10s;
 }
 #project .three img {
   position: absolute;
