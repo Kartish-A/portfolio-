@@ -54,6 +54,11 @@ body {
   /*this is btn under each project's browser*/
   /* ---"My work" banner--- */
 }
+#project a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fdfffc;
+}
 #project #browser {
   width: 600px;
   height: 300px;
@@ -1244,8 +1249,10 @@ ul li a:hover {
     margin-left: 0;
     padding-top: 10px;
   }
-  #project .moreAbout p {
-    font-size: 14px;
+  #project .moreAbout a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fdfffc;
   }
 
   .top {
@@ -1517,8 +1524,10 @@ ul li a:hover {
     margin-left: 10px;
     padding-top: 10px;
   }
-  #project .moreAbout p {
+  #project .moreAbout a {
     font-size: 12px;
+    text-decoration: none;
+    color: #fdfffc;
   }
 
   .top {
@@ -1791,8 +1800,10 @@ ul li a:hover {
     margin-left: 10px;
     padding-top: 10px;
   }
-  #project .moreAbout p {
+  #project .moreAbout a {
     font-size: 12px;
+    text-decoration: none;
+    color: #fdfffc;
   }
 
   .top {
@@ -2166,8 +2177,10 @@ ul li a:hover {
     margin-left: 10px;
     padding-top: 10px;
   }
-  #project .moreAbout p {
-    font-size: 12px;
+  #project .moreAbout a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fdfffc;
   }
 
   .top {
@@ -2545,8 +2558,10 @@ ul li a:hover {
     margin-left: 10px;
     padding-top: 10px;
   }
-  #project .moreAbout p {
-    font-size: 12px;
+  #project .moreAbout a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fdfffc;
   }
 
   .top {
@@ -2927,8 +2942,10 @@ ul li a:hover {
     margin-left: 10px;
     padding-top: 10px;
   }
-  #project .moreAbout p {
-    font-size: 12px;
+  #project .moreAbout a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fdfffc;
   }
 
   .top {
@@ -3310,8 +3327,10 @@ ul li a:hover {
     margin-left: 10px;
     padding-top: 10px;
   }
-  #project .moreAbout p {
+  #project .moreAbout a {
     font-size: 10px;
+    text-decoration: none;
+    color: #fdfffc;
   }
 
   .top {

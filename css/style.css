@@ -1531,8 +1531,9 @@ ul li a:hover {
     margin-left: 0;
     padding-top: 10px;
   }
-  #project .moreAbout p {
-    font-size: 14px;
+  #project .moreAbout .link {
+    font-size: 12px;
+    text-decoration: none;
   }
   .top {
     width: 150px;

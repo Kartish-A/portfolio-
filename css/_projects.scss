@@ -33,6 +33,11 @@
 #project {
   display: flex;
   flex-direction: column;
+  a {
+    font-size: 16px;
+    text-decoration: none; 
+    color: #fdfffc;
+  }
 
   #browser {
     width: 600px;
